@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'dep-mono';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/DepartureMono-Regular.otf') format('opentype'),
+    url(assets/fonts/DepartureMono-Regular.woff) format('woff'),
+    url(assets/fonts/DepartureMono-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'rubik';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/Rubik-VariableFont_wght.ttf') format('truetype');
+}
+
+@theme {
+  --font-serif: 'rubik', ui-serif, Georgia, Cambria, 'Times New Roman', Times,
+    serif;
+  --font-mono: 'dep-mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+}
+
+@utility transition-allow-discrete {
+  transition-behavior: allow-discrete;
+}

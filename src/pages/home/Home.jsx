@@ -1,41 +1,41 @@
-import { ExpandDown } from './assets/components/Icons';
 import { useState } from 'react';
+
+import { ExpandDown } from '../../components/Icons';
+import Separator from '../../components/Separator';
+import SkillCard from '../../components/SkillCard';
+
 import Hero from './sections/Hero';
 import About from './sections/About';
-import Separator from './assets/components/Separator';
-import SkillCard from './assets/components/SkillCard';
 import Works from './sections/Works';
 import Achievements from './sections/Achievements';
 import Playground from './sections/Playground';
 
-function App() {
+export default function Home() {
   const [aboutMeExpanded, setAboutMeExpanded] = useState(false);
   const [activeTab, setActiveTab] = useState(0);
 
   return (
     <>
-      <header className="font-mono mx-4 py-4">thoriqfarras.</header>
-      <Separator />
       <Hero />
       <button
         className="flex items-center py-4 gap-2 text-zinc-400 w-full hover:cursor-pointer hover:underline"
         type="button"
         onClick={() => setAboutMeExpanded(!aboutMeExpanded)}
       >
-        <p className="font-serif ml-4 ">Learn more about me</p>
+        <p className="font-serif">Learn more about me</p>
         <ExpandDown
           className={`fill-zinc-400 transition-all h-full ${
             aboutMeExpanded ? 'rotate-180' : ''
           }`}
         />
         <div
-          className={`border-t-[1px] border-zinc-400 mr-4 flex-1 ${
+          className={`border-t-[1px] border-zinc-400 flex-1 ${
             aboutMeExpanded ? '' : 'hidden'
           }`}
         ></div>
       </button>
       <About expanded={aboutMeExpanded} />
-      <ul className="flex mx-4 overflow-x-auto [&_button]:hover:cursor-pointer">
+      <ul className="flex  overflow-x-auto [&_button]:hover:cursor-pointer [&>*]:mr-4">
         <li
           className={`${
             activeTab === 0
@@ -43,7 +43,7 @@ function App() {
               : 'text-zinc-400'
           }`}
         >
-          <h1 className="font-mono text-2xl mt-8 mx-4 mb-4 font-bold">
+          <h1 className="font-mono text-2xl mt-8  mb-4 font-bold">
             <button type="button" onClick={() => setActiveTab(0)}>
               Works
             </button>
@@ -57,7 +57,7 @@ function App() {
           }`}
         >
           <h1
-            className={`font-mono text-2xl mt-8 mx-4 mb-4 font-bold ${
+            className={`font-mono text-2xl mt-8  mb-4 font-bold ${
               activeTab === 1 ? '' : 'text-zinc-400'
             }`}
           >
@@ -74,7 +74,7 @@ function App() {
           }`}
         >
           <h1
-            className={`font-mono text-2xl mt-8 mx-4 mb-4 font-bold ${
+            className={`font-mono text-2xl mt-8  mb-4 font-bold ${
               activeTab === 2 ? '' : 'text-zinc-400'
             }`}
           >
@@ -94,7 +94,7 @@ function App() {
       ) : (
         ''
       )}
-      <p className="font-serif mx-4 my-4 text-center">
+      <p className="font-serif  my-4 text-center">
         Looking for some more? Check out my{' '}
         <a
           className="font-bold underline"
@@ -109,9 +109,9 @@ function App() {
         </a>
         .
       </p>
-      <h1 className="font-mono text-2xl mt-8 mx-4 mb-4 font-bold">Skills</h1>
+      <h1 className="font-mono text-2xl mt-8  mb-4 font-bold">Skills</h1>
       <Separator />
-      <div className="mx-4 mt-4 mb-8 grid gap-4 grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))]">
+      <div className=" mt-4 mb-8 grid gap-4 grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))]">
         <SkillCard name="HTML, CSS, JS" level="Intermediate" />
         <SkillCard name="ReactJS" level="Intermediate" />
         <SkillCard name="NextJS" level="Basic" />
@@ -119,12 +119,6 @@ function App() {
         <SkillCard name="ReactJS" level="Intermediate" />
         <SkillCard name="NextJS" level="Basic" />
       </div>
-      <Separator />
-      <footer className="font-serif text-center my-4 text-zinc-400">
-        Copyright Thoriq Farras - {new Date().getFullYear()}
-      </footer>
     </>
   );
 }
-
-export default App;

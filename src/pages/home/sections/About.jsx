@@ -1,6 +1,6 @@
 export default function About({ expanded }) {
   return (
-    <div className={`flex flex-col mx-4 ${expanded ? '' : 'hidden'}`}>
+    <div className={`flex flex-col ${expanded ? '' : 'hidden'}`}>
       <img
         src="/src/assets/meAtSac.jpg"
         alt="A portrait of me"

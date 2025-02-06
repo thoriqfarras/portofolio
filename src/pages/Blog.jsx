@@ -1,4 +1,4 @@
-import { Arrow } from '../../components/Icons';
+import { Arrow } from '../components/Icons';
 import Markdown from 'react-markdown';
 import { useState, useEffect } from 'react';
 // import content from '/blog/test-blog/test-blog.md';

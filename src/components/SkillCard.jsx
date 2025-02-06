@@ -3,7 +3,6 @@ export default function SkillCard({ name, level }) {
     const skillLevel = [...e.target.children].find((c) =>
       c.classList.contains('level')
     );
-    console.log(skillLevel);
     skillLevel.classList.add('grid-rows-[1fr]');
     skillLevel.classList.remove('grid-rows-[0fr]');
   }

@@ -1,11 +1,28 @@
 # Repetit
 
-[Github Repo](#)
+Links:
 
-_What is it:_
+- [Github Repo](https://github.com/edukesyen/repetit-fe-nextjs)
+- [Live demo (MVP)](https://repetit.vercel.app/)
+- [Demo video]()
 
-## Notable Features
+It's like Anki but instead of creating each flashcard by hand a generative AI does it for you. This app is aimed toward students and learners of any age who likes to use flashcards in their studying.
 
-## My Role
+Flashcards have been scientifically proven to be one of the most effective methods of retrieving information in the brain. However, the process of creating flashcards can become tedious. Repetit aims to streamline that by using generative AI to help learners create flashcards.
 
-## Biggest Takeaway
+### Notable Features
+
+- Generate flashcards from study materials in the form of texts (PDFs) or links (to articles, papers, videos).
+- Review flashcards in an interval depending on retention level.
+
+### My Role
+
+- Designing the initial wireframe, prototype, and flow of the app.
+- Implementing the front-end.
+- Creating roadmaps and delegating tasks to other team members
+
+### Tech Stack
+
+- NextJS
+- PostgreSQL
+- FastAPI

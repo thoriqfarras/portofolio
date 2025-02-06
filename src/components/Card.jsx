@@ -1,7 +1,9 @@
-export default function Card({ imgSrc, title, subtitle, actionText }) {
+import { NavLink } from 'react-router';
+
+export default function Card({ title, subtitle, actionText, url }) {
   return (
-    <a
-      href="/blog"
+    <NavLink
+      to={url}
       className="border-[1px] border-black p-4 drop-shadow-[4px_4px_0px_rgba(0,0,0,0.5)] bg-white hover:scale-[1.0125] transition-transform"
     >
       {/* <img src={imgSrc} alt="project/achievement pic" /> */}
@@ -10,6 +12,6 @@ export default function Card({ imgSrc, title, subtitle, actionText }) {
       <p className="font-serif text-zinc-400 text-right hover:cursor-pointer hover:underline">
         {actionText}
       </p>
-    </a>
+    </NavLink>
   );
 }

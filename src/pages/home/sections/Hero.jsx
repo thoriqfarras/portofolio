@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <>
-      <h1 className="font-mono text-3xl mt-8 font-bold drop-shadow-[1.5px_1.5px_0_rgba(0,0,0,0.25)]">
+      <h1 className="font-mono text-3xl mt-24 font-bold drop-shadow-[1.5px_1.5px_0_rgba(0,0,0,0.25)]">
         Hi, I'm Thoriq.
       </h1>
       <p className="font-serif text-2xl mt-4">

@@ -28,3 +28,12 @@
 @utility transition-allow-discrete {
   transition-behavior: allow-discrete;
 }
+
+a,
+button {
+  @apply active:translate-y-0.5 transition-transform;
+}
+
+a {
+  @apply inline-block;
+}

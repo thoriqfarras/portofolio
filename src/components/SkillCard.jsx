@@ -23,8 +23,15 @@ export default function SkillCard({ name, level }) {
       onMouseLeave={handleHoverOutOfSkills}
     >
       <p className="font-bold text-center">{name}</p>
-      <div className="level grid grid-rows-[0fr] transition-[grid-template-rows_0.5s_ease-out]">
-        <p className="overflow-hidden text-sm text-center">{level}</p>
+      <div className="level grid grid-rows-[0fr] transition-all">
+        <div className="overflow-hidden text-center flex gap-1 text-[10px] justify-center text-zinc-400">
+          <span className={`${level === 0 ? 'text-black' : ''}`}>Basic</span>
+          <span className={`${level === 1 ? 'text-black' : ''}`}>Novice</span>
+          <span className={`${level === 2 ? 'text-black' : ''}`}>
+            Intermediate
+          </span>
+          <span className={`${level === 3 ? 'text-black' : ''}`}>Expert</span>
+        </div>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ _Pagelaran Mahasiswa Nasional Bidang Teknologi Informasi dan Komunikasi_, colloq
 
 My two brilliant friends and I joined forces to create [Repetit]('/blog/repetit/repetit.md'), which you can see in my Works tab. And thanks to our combined effort, we managed to finish as a finalist in the Software Development Division! Which is the top 20 teams in the nation!
 
-![My Gemastik 2024 Finalist certificate](/content/blog/gemastik/assets/certificate.jpg)
+![My Gemastik 2024 Finalist certificate](/blog/gemastik/assets/certificate.jpg)
 
 ## My role
 

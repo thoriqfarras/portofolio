@@ -4,7 +4,7 @@ Held annually by the Google Developer Student Clubs, the Solution Challenge is a
 
 I teamed up with 3 of my hardworking friends to come up with [Si Rene](/content/blog/si-rene/si-rene.md). Our combined efforts managed to brought us the global top 100 teams, beating thousands of teams from around the world!
 
-![Top 100 Solution Challenge certificate](/content/blog/gsc/assets/certificate.jpg)
+![Top 100 Solution Challenge certificate](/blog/gsc/assets/certificate.jpg)
 
 # My role
 

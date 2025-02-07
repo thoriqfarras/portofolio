@@ -1,7 +1,6 @@
 import { Arrow } from '../components/Icons';
 import Markdown from 'react-markdown';
 import { useState, useEffect } from 'react';
-// import content from '/blog/test-blog/test-blog.md';
 import { NavLink, useParams } from 'react-router';
 
 export default function Blog() {
@@ -9,7 +8,7 @@ export default function Blog() {
   let { slug, md } = useParams();
 
   useEffect(() => {
-    fetch(`/content/blog/${slug}/${md}`)
+    fetch(`/blog/${slug}/${md}`)
       .then((res) => res.text())
       .then((text) => setMarkdown(text));
   }, [slug, md]);

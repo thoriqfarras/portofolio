@@ -9,10 +9,10 @@ export default function Blog() {
   let { slug, md } = useParams();
 
   useEffect(() => {
-    fetch(`/blog/${slug}/${md}`)
+    fetch(`/content/blog/${slug}/${md}`)
       .then((res) => res.text())
       .then((text) => setMarkdown(text));
-  }, []);
+  }, [slug, md]);
 
   return (
     <div className="flex flex-col items-center">

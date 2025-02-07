@@ -8,10 +8,13 @@ import Separator from '@/components/Separator';
 import SkillCard from '@/components/SkillCard';
 import Card from '@/components/Card';
 
+const GITHUB_URL = 'https://github.com/thoriqfarras';
+const LINKEDIN_URL =
+  'https://www.linkedin.com/in/thoriq-ibrahim-farras-326579262/';
+
 export default function Home() {
   const [aboutMeExpanded, setAboutMeExpanded] = useState(false);
   const [activeProjectsTab, setActiveProjectsTab] = useState(0);
-  const [activeSkillsTab, setActiveSkillsTab] = useState(0);
 
   return (
     <>
@@ -100,9 +103,9 @@ export default function Home() {
         <a
           className="font-bold underline"
           href={
-            activeProjectsTab === 0
-              ? 'https://github.com/thoriqfarras'
-              : 'https://www.linkedin.com/in/thoriq-ibrahim-farras-326579262/'
+            activeProjectsTab === 0 || activeProjectsTab === 2
+              ? GITHUB_URL
+              : LINKEDIN_URL
           }
           target="_blank"
         >
@@ -123,8 +126,14 @@ export default function Home() {
         <SkillCard name="MySQL" level={0} />
         <SkillCard name="ExpressJS" level={0} />
         <SkillCard name="HTML, CSS, JS" level={2} />
+        <SkillCard name="Tailwind CSS" level={2} />
+        <SkillCard name="Bootstrap" level={0} />
         <SkillCard name="PHP" level={0} />
         <SkillCard name="Python" level={2} />
+        <SkillCard name="C++" level={0} />
+        <SkillCard name="Java" level={0} />
+        <SkillCard name="Git" level={2} />
+        <SkillCard name="Figma" level={1} />
       </div>
     </>
   );
@@ -141,20 +150,12 @@ function Hero() {
       </p>
       <ul className="flex mt-4 text-xl gap-4 font-serif">
         <li>
-          <a
-            href="https://github.com/thoriqfarras"
-            className="underline"
-            target="_blank"
-          >
+          <a href={GITHUB_URL} className="underline" target="_blank">
             Github
           </a>
         </li>
         <li>
-          <a
-            href="https://www.linkedin.com/in/thoriq-ibrahim-farras-326579262/"
-            target="_blank"
-            className="underline"
-          >
+          <a href={LINKEDIN_URL} target="_blank" className="underline">
             LinkedIn
           </a>
         </li>
@@ -240,7 +241,7 @@ function Works() {
           key={work.title}
           title={work.title}
           subtitle={work.description}
-          actionText="Learn more & live demo"
+          actionText="Learn more"
           url={work.blogUrl}
         ></Card>
       ))}
@@ -256,7 +257,7 @@ function Achievements() {
           key={achievement.title}
           title={achievement.title}
           subtitle={achievement.description}
-          actionText="Learn more & live demo"
+          actionText="Learn more"
           url={achievement.blogUrl}
         ></Card>
       ))}
@@ -272,8 +273,9 @@ function Playground() {
           key={project.title}
           title={project.title}
           subtitle={project.description}
-          actionText="Learn more & live demo"
-          url={project.blogUrl}
+          actionText="Live demo"
+          url={project.demoUrl}
+          newTab={true}
         ></Card>
       ))}
     </div>

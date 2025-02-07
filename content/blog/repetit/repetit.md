@@ -3,8 +3,7 @@
 Links:
 
 - [Github Repo](https://github.com/edukesyen/repetit-fe-nextjs)
-- [Live demo (MVP)](https://repetit.vercel.app/)
-- [Demo video]()
+- [Demo video](https://www.youtube.com/watch?v=WANhEs8uFiQ)
 
 It's like Anki but instead of creating each flashcard by hand a generative AI does it for you. This app is aimed toward students and learners of any age who likes to use flashcards in their studying.
 
@@ -17,6 +16,8 @@ Flashcards have been scientifically proven to be one of the most effective metho
 
 ### My Role
 
+My role is closer to what a PM role would look like, with a bit of technical work sprinkled here and there.
+
 - Designing the initial wireframe, prototype, and flow of the app.
 - Implementing the front-end.
 - Creating roadmaps and delegating tasks to other team members
@@ -26,3 +27,4 @@ Flashcards have been scientifically proven to be one of the most effective metho
 - NextJS
 - PostgreSQL
 - FastAPI
+- Supabase

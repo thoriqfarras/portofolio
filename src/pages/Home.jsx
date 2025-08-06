@@ -11,6 +11,8 @@ import Card from '@/components/Card';
 const GITHUB_URL = 'https://github.com/thoriqfarras';
 const LINKEDIN_URL =
   'https://www.linkedin.com/in/thoriq-ibrahim-farras-326579262/';
+const CV_URL =
+  'https://drive.google.com/file/d/1BlAyr10HXK8uFiRtQUAnNzDpF1-RIlmq/view?usp=sharing';
 
 export default function Home() {
   const [aboutMeExpanded, setAboutMeExpanded] = useState(false);
@@ -157,6 +159,11 @@ function Hero() {
         <li>
           <a href={LINKEDIN_URL} target="_blank" className="underline">
             LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href={CV_URL} target="_blank" className="underline">
+            CV
           </a>
         </li>
       </ul>
